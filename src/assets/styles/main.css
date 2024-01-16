@@ -1,0 +1,91 @@
+@import './base.css';
+
+#app {
+    margin: 0 auto;
+    font-weight: lighter;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#canvas-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header-container {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+/*************/
+/*  BUTTONs  */
+/*************/
+
+.btn1 {
+    color: white !important;
+    padding: 10px 25px !important;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 6px;
+    z-index: -1;
+    transition: 200ms;
+}
+
+.btn1::after {
+    content: attr(data);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+}
+
+.btn1:hover::before {
+    opacity: 1%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.btn2 {
+    flex: 1 1 auto;
+    border-radius: 6px;
+    padding: 10px 25px !important;
+    text-align: center;
+    background-size: 150% auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.btn2::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    z-index: -1;
+}
+
+.btn2:hover {
+    background-position: right center;
+}

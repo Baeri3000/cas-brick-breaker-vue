@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+:root {
+  --color-neutral: #fffcf5;
+  --color-orange: #ff9686;
+  --color-yellow: #ffee88;
+  --color-blue: #d6e8f7;
+  --color-black: #333333;
+  --color-white: #ffffff;
+  
+ /* Font sizes */
+  --p-mobile: 16px;
+  --h1-desktop: 50px;
+  --h2-desktop: 36px;
+  --h3-desktop: 24px;
+  --h4-desktop: 18px;
+  --h1-mobile: 40px;
+  --h2-mobile: 30px;
+  --h3-mobile: 20px;
+  --h4-mobile: 16px;
+  
+  /* Mobile view breakpoints */
+  --breakpoint-xl: 1600px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-md: 992px;
+  --breakpoint-sm: 768px;
+  --breakpoint-xs: 570px;
+  --breakpoint-xxs: 430px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: dreamAvenue, sans-serif;
+  min-height: 100vh;
+  color: var(--color-black);
+  background: var(--color-neutral) !important;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
