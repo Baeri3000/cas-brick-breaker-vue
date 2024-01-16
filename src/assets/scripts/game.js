@@ -28,6 +28,10 @@ const PADDLE_DIST_FROM_EDGE = 60;
 let mouseX = 0;
 let mouseY = 0;
 
+// Touch
+let touchX = 0;
+let touchY = 0;
+
 /**********
  General GamePlay
  ***********/
@@ -38,7 +42,7 @@ window.onload = function () {
     setInterval(updateAll, 1000 / framesPerSecond);
 
     canvas.addEventListener('mousemove', updateMousePos);
-    canvas.addEventListener('touchmove', updateMousePos);
+    canvas.addEventListener('touchmove', updateTouchPos);
     brickReset();
     ballRest();
 }
@@ -170,19 +174,23 @@ function movement() {
 }
 
 function updateMousePos(evt) {
-    var rect = canvas.getBoundingClientRect();
-    var root = document.documentElement;
+    const rect = canvas.getBoundingClientRect();
+    const root = document.documentElement;
 
     mouseX = evt.clientX - rect.left - root.scrollLeft;
     mouseY = evt.clientY - rect.top - root.scrollTop;
 
     paddleX = mouseX - PADDLE_WIDTH / 2;
+}
 
-    //cheat to test ball in any position
-    // ballX = mouseX;
-    // ballY = mouseY;
-    // ballSpeedY = 4;
-    // ballSpeedY = -4;
+function updateTouchPos(evt) {
+    const rect = canvas.getBoundingClientRect();
+    const root = document.documentElement;
+
+    touchX = evt.touches[0].clientX - rect.left - root.scrollLeft;
+    touchY = evt.touches[0].clientY - rect.top - root.scrollTop;
+
+    paddleX = touchX - PADDLE_WIDTH / 2;
 }
 
 /**********
