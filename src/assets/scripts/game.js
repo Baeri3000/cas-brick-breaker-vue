@@ -198,11 +198,11 @@ function updateTouchPos(evt) {
  ***********/
 function playArea() {
     // gameCanvas
-    colorRect(0, 0, canvas.width, canvas.height, 'white');
+    colorRect(0, 0, canvas.width, canvas.height, '#333333');
     // ball
     colorCircle();
     // paddle
-    colorRect(paddleX, canvas.height - PADDLE_DIST_FROM_EDGE, PADDLE_WIDTH, PADDLE_THICKNESS, 'black');
+    colorRect(paddleX, canvas.height - PADDLE_DIST_FROM_EDGE, PADDLE_WIDTH, PADDLE_THICKNESS, '#FBFFF1');
 
     drawbricks();
 }
@@ -227,14 +227,14 @@ function drawbricks() {
             var arrayIndex = rowColToArrayIndex(eachCol, eachRow);
             if (brickGrid[arrayIndex]) {
                 colorRect(BRICK_W * eachCol, BRICK_H * eachRow,
-                    BRICK_W - BRICK_GAP, BRICK_H - BRICK_GAP, 'green');
+                    BRICK_W - BRICK_GAP, BRICK_H - BRICK_GAP, '#BF40BF');
             } //   if brick
         }// each brick
     }// each brickrow
 }// drawbricks
 
 function colorCircle() {
-    canvasContext.fillStyle = 'black';
+    canvasContext.fillStyle = '#FBFFF1';
     canvasContext.beginPath();
     canvasContext.arc(ballX, ballY, 10, 0, Math.PI * 2, true);
     canvasContext.fill();

@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="content">
         <div class="row">
-          <div class="col">
+          <div class="col no-padding">
             <div id="canvas-container">
               <canvas id="gameCanvas" class="gameCanvas" width="800" height="600"></canvas>
             </div>
@@ -41,5 +41,9 @@
 .gameCanvas {
   min-width: 800px;
   min-height: 600px;
+}
+
+.no-padding {
+  padding-right: 0 !important;
 }
 </style>
