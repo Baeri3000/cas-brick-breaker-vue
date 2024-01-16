@@ -21,6 +21,10 @@ body {
     color: white;
 }
 
+#gameCanvas {
+    width: 100%;
+}
+
 /*************/
 /*  BUTTONs  */
 /*************/
