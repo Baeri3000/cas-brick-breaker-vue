@@ -38,6 +38,7 @@ window.onload = function () {
     setInterval(updateAll, 1000 / framesPerSecond);
 
     canvas.addEventListener('mousemove', updateMousePos);
+    canvas.addEventListener('touchmove', updateMousePos);
     brickReset();
     ballRest();
 }
