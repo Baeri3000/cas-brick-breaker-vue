@@ -41,9 +41,10 @@
 .gameCanvas {
   min-width: 800px;
   min-height: 600px;
+  border: 1px solid var(--color-pink);
 }
 
 .no-padding {
-  padding-right: 0 !important;
+  padding: 0 !important;
 }
 </style>

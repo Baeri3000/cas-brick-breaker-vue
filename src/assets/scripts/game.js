@@ -4,11 +4,11 @@
 let canvas, canvasContext;
 
 // Bricks
-const BRICK_W = 80;
-const BRICK_H = 20;
-const BRICK_GAP = 2;
-const BRICK_COLS = 10;
-const BRICK_ROWS = 14;
+const BRICK_W = 100;
+const BRICK_H = 40;
+const BRICK_GAP = 10;
+const BRICK_COLS = 8;
+const BRICK_ROWS = 3;
 const brickGrid = new Array(BRICK_COLS * BRICK_ROWS);
 let brickCount = 0;
 
@@ -64,7 +64,7 @@ function brickReset() {
     for (i = 0; i < 3 * BRICK_COLS; i++) {
         brickGrid[i] = false;
     }
-    for (; i < BRICK_COLS * BRICK_ROWS; i++) {
+    for (i = 0; i < BRICK_COLS * BRICK_ROWS; i++) {
         brickGrid[i] = Math.random() < 0.5;
         brickGrid[i] = true;
         brickCount++;
