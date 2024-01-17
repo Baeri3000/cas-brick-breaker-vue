@@ -5,6 +5,7 @@ import router from './router'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import './assets/scripts/game.js'
+import './registerServiceWorker'
 
 const app = createApp(App)
 
