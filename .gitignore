@@ -28,3 +28,6 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+/dev-dist/registerSW.js
+/dev-dist/sw.js
+/dev-dist/workbox-6e3354dc.js
