@@ -19,9 +19,9 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://cas-brick-breaker-vue.web.app",
   "background_color": "#333333",
   "theme_color": "#333333",
   "display": "standalone",
-  "scope": "/"
+  "scope": "https://cas-brick-breaker-vue.web.app"
 }
