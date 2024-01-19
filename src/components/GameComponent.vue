@@ -47,4 +47,22 @@
 .no-padding {
   padding: 0 !important;
 }
+
+@media (max-width: 360px) {
+  .gameCanvas {
+    max-width: 360px;
+    min-width: auto;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 800px )and (max-height: 360px) {
+  .gameCanvas {
+    max-width: 360px;
+    min-width: auto;
+    min-height: auto;
+  }
+
+}
 </style>
