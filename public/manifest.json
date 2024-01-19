@@ -3,17 +3,17 @@
   "name": "CAS Brick Breake Vue PWA",
   "icons": [
     {
-      "src": "/src/assets/img/icons/brick-breaker.png",
+      "src": "./assets/img/icons/brick-breaker.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/src/assets/img/icons/android-chrome-512x512.png",
+      "src": "./assets/img/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/src/assets/img/icons/maskable_icon.png",
+      "src": "./assets/img/icons/maskable_icon.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable"

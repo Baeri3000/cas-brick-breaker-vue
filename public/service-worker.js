@@ -8,10 +8,7 @@ self.addEventListener('install', function (event) {
                 './src/assets/styles/main.css',
                 './src/assets/scripts/game.js',
                 './src/assets/img/icons/brick-breaker.png',
-                './src/assets/img/icons/android-chrome-192x192.png',
                 './src/assets/img/icons/android-chrome-512x512.png',
-                './src/assets/img/icons/favicon-16x16.png',
-                './src/assets/img/icons/favicon-32x32.png',
                 './src/assets/img/icons/maskable_icon.png'
             ]);
         })
