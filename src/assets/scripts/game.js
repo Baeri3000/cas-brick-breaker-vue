@@ -80,7 +80,7 @@ function ballMove() {
         // ballSpeedY = -ballSpeedY;
         ballRest();
         brickReset();
-    } else if (ballY < 0 && ballSpeedY > 0.0) {
+    } else if (ballY <= 0) {
         ballSpeedY = -ballSpeedY;
     }
     // ballx
