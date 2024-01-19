@@ -48,21 +48,28 @@
   padding: 0 !important;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 580px) {
   .gameCanvas {
     max-width: 360px;
     min-width: auto;
     min-height: auto;
   }
-
 }
 
-@media (max-width: 800px )and (max-height: 360px) {
+@media (max-width: 360px) {
+  .gameCanvas {
+    margin: 0 10px;
+    max-width: 340px;
+    min-width: auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 1000px )and (max-height: 580px) {
   .gameCanvas {
     max-width: 360px;
     min-width: auto;
     min-height: auto;
   }
-
 }
 </style>
