@@ -190,7 +190,7 @@ function updateTouchPos(evt) {
     touchX = evt.touches[0].clientX - rect.left - root.scrollLeft;
     touchY = evt.touches[0].clientY - rect.top - root.scrollTop;
 
-    paddleX = touchX - PADDLE_WIDTH / 2;
+    paddleX = (touchX - PADDLE_WIDTH / 2) * 2.7;
 }
 
 /**********
