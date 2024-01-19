@@ -12,6 +12,10 @@ export default defineConfig({
     plugins: [
         vue(),
         VitePWA({
+            devOptions: {
+                enabled: true,
+                type: 'module',
+            },
             registerType: 'autoUpdate',
             manifest: {
                 short_name: "cas_brick_breaker_vue",
@@ -37,7 +41,7 @@ export default defineConfig({
                 }]
             },
             includeManifestIcons: true,
-            includeAssets: ['./public/img/icons/*.png']
+            includeAssets: ['./img/icons/*.png']
         })
     ],
     resolve: {
