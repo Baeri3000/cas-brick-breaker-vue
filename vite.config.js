@@ -12,6 +12,7 @@ export default defineConfig({
     plugins: [
         vue(),
         VitePWA({
+            registerType: 'autoUpdate',
             manifest: {
                 short_name: "cas_brick_breaker_vue",
                 name: "CAS Brick Breake Vue PWA",
