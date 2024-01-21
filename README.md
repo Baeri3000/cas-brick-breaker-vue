@@ -1,6 +1,7 @@
 # CAS Brick Breaker @HSLU
 
-This is a brick breaker game developed wit vue 3 and the help of OpenAI Codex.
+This is a brick breaker game developed wit vue 3 and VitePWA.
+The Game is deployed with Firebase to: https://cas-brick-breaker-vue.web.app/
 
 CAS Modern Software Engineering & Development
 
