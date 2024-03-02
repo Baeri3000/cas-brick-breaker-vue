@@ -28,7 +28,7 @@ p {
 }
 
 a {
-  color: var(--color-orange);
+  color: var(--color-pink);
 }
 
 .container {
@@ -41,6 +41,7 @@ a {
   place-content: center;
   flex-direction: column;
   text-align: justify;
+  color: var(--color-pink);
 }
 
 .button {
@@ -52,7 +53,7 @@ a {
 .btn2 {
   width: 200px;
   border: 2px solid;
-  border-color: var(--color-orange);
+  border-color: var(--color-pink);
   border-radius: 0;
 }
 
